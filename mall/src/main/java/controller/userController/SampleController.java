@@ -12,7 +12,7 @@ public class SampleController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("/")
+    @RequestMapping("/user")
     User home() {
         return userService.getUserById(1);
     }
